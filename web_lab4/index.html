@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Форма</title>
+</head>
+<body>
+<form action="handler.php" enctype="multipart/form-data">
+    Введите какой-нибудь текст
+    <input type="text" name="textField" required="required">
+    <select name="list">
+        <option value=""></option>
+        <option value="1">Первый</option>
+        <option value="2">Второй</option>
+        <option value="3">Третий</option>
+    </select>
+    <br>
+    При отправке формы методом POST, Вы можете прикрепить файл
+    <input type="file" name="userFile">
+    <br><br>
+    <button type="submit" formmethod="POST">Отправить форму методом POST</button><br>
+    <button type="submit" formmethod="GET">Отправить форму методом GET</button>
+    </form>
+</body>
+</html>
